@@ -11,7 +11,7 @@
       background-size: cover;
       color: #fff;
       font-family: sans-serif;
-      text-align: center; /* Agregamos centrado horizontal */
+      text-align: center;
     }
 
     .contenido {
@@ -19,25 +19,28 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 800px; /* Ampliamos el ancho para acomodar el contenido */
+      width: 800px;
       height: 500px;
       border-radius: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: #7890ab; /* Cambiamos el color del fondo a un tono azul */
       padding: 20px;
     }
 
     .contenido h1 {
       font-size: 2em;
+      color: #fff;
     }
 
     .contenido h2 {
       font-size: 1.8em;
       margin-top: 10px;
+      color: #fff;
     }
 
     .contenido h3 {
       font-size: 1.6em;
       margin-top: 10px;
+      color: #fff;
     }
 
     .contenido form {
@@ -62,7 +65,10 @@
     }
 
     .contenido img {
-      margin-top: 20px; /* Agregamos margen superior a la imagen */
+      margin-top: 0; /* Eliminamos el margen superior a la imagen */
+      position: relative; /* Colocamos la imagen en posición relativa */
+      top: 50%; /* Centramos la imagen verticalmente */
+      transform: translateY(-50%); /* Aplicamos una transformación para centrar la imagen verticalmente */
     }
   </style>
 </head>
@@ -78,7 +84,7 @@
       <input type="email" id="email" name="email"><br>
       <input type="submit" value="Submit">
     </form>
-    <img src="hola.gif">
+    <img src="hola.gif" width="200" height="200" alt="Logo">
   </div>
 </body>
 </html>
